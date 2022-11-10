@@ -1,0 +1,14 @@
+<fc:component>
+    <fc:param name="action" type="string" />
+
+    <fc:renderer>
+			<button 
+				@click="{action}" 
+				class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow focus:outline-none"
+				>
+				<f:if condition="{content}">
+					{content}
+				</f:if>
+			</button>
+    </fc:renderer>
+</fc:component>

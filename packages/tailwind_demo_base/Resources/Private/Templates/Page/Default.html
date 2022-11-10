@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:td="http://typo3.org/ns/Floriangeierstanger/TailwindDemoBase/Components" data-namespace-typo3-fluid="true" > </html>
+
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <td:Card title="TYPO3" link="https://typo3.org" icon="typo3">
+        The professional, flexible Content Management System
+    </td:Card>
+
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+
+</f:section>

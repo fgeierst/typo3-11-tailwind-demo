@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:td="http://typo3.org/ns/Floriangeierstanger/TailwindDemoBase/Components" data-namespace-typo3-fluid="true" > </html>
+<fc:component>
+    <fc:param name="title" type="string" />
+    <fc:param name="link" type="Typolink" />
+    <fc:param name="icon" type="string" optional="1" />
+    <fc:param name="theme" type="string" optional="1" default="light" />
+
+    <fc:renderer>
+        <a href="{link}" class="{component.class} {component.class}-{theme} border border-black p-1 rounded block ">
+            <h3 class="{component.prefix}title">{title}</h3>
+            <f:if condition="{content}">
+                <p class="{component.prefix}description">{content}</p>
+            </f:if>
+
+            <f:if condition="{icon}">
+                <i class="icon icon-{icon} {component.prefix}icon"></i>
+            </f:if>
+					</a>
+					<div v-scope="{ count: 0 }" data-reactive>
+						<p>{{ count }}</p>
+
+						<td:Button action="count++">
+							Increment
+						</td:Button>
+					</div>
+    </fc:renderer>
+</fc:component>
