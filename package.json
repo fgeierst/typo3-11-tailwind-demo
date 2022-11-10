@@ -6,8 +6,8 @@
   "scripts": {
     "css:dev": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --watch",
     "css:build": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --minify",
-    "dev": "rollup --config --watch",
-    "build": "rollup --config"
+    "js:dev": "rollup --config --watch",
+    "js:build": "rollup --config"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
