@@ -16,6 +16,7 @@
 		"floriangeierstanger/tailwind-demo-base": "^0.0.1",
 		"helhum/typo3-console": "^7.0.2",
 		"sitegeist/fluid-components": "^3.4",
+		"sitegeist/fluid-styleguide": "^2.0",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
 		"typo3/cms-beuser": "^11.5.0",

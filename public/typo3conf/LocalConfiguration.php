@@ -31,6 +31,9 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'fluid_styleguide' => [
+            'uriPrefix' => '/styleguide/',
+        ],
     ],
     'FE' => [
         'debug' => false,

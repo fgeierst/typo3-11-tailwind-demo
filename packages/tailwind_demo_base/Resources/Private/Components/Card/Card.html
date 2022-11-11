@@ -11,17 +11,13 @@
             <f:if condition="{content}">
                 <p class="{component.prefix}description">{content}</p>
             </f:if>
+        </a>
+        <div v-scope="{ count: 0 }" data-reactive>
+            <p>{{ count }}</p>
 
-            <f:if condition="{icon}">
-                <i class="icon icon-{icon} {component.prefix}icon"></i>
-            </f:if>
-					</a>
-					<div v-scope="{ count: 0 }" data-reactive>
-						<p>{{ count }}</p>
-
-						<td:Button action="count++">
-							Increment
-						</td:Button>
-					</div>
+            <td:Button action="count++">
+                Increment
+            </td:Button>
+        </div>
     </fc:renderer>
 </fc:component>
