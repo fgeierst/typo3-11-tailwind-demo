@@ -2,7 +2,7 @@
     <fc:param name="navigation" type="array" />
 
     <fc:renderer>
-			<ul class="flex gap-4">
+			<ul class="flex gap-6 {class}">
 				<f:for each="{navigation}" as="mainnavigationItem">
 					<li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
 							<a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">

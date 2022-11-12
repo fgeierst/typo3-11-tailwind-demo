@@ -1,7 +1,32 @@
-	<header id="header" class="flex gap-4 justify-between bg-blue-100 p-4">
+	<header id="header" 
+		class="flex gap-4 justify-between items-center
+		bg-blue-100 p-4 sticky top-0 h-16 font-bold" 
+		v-scope="{ open: false }" 
+		data-reactive
+	>
 
-		<a href="/">Home</a>
+		<a href="/" class="hover:underline underline-offset-4">Home</a>
 
-		<td:Menu navigation="{mainnavigation}" />
+		<td:Menu 
+			navigation="{mainnavigation}" 
+			class="hidden sm:flex"
+		/>
+		<div 
+			class="fixed top-16 bottom-0 left-0 right-0 
+				bg-blue-100 text-4xl font-medium" 
+			v-show="open"
+		>
+			<td:Menu 
+				navigation="{mainnavigation}" 
+				class="flex-col items-center gap-10 p-4 pt-10"
+			/>
+		</div>
+
+		<button 
+			class="sm:hidden"
+			@click="open = !open" 
+			v-text="open ? 'Close Menu' : 'Open Menu'"
+			:aria-expanded="open"
+		></button>
 
 	</header>
