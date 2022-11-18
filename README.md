@@ -1,58 +1,36 @@
-# TYPO3 CMS Base Distribution
+# TYPO3 Cat Stack Demo
 
-Get going quickly with TYPO3 CMS.
+A quick demo for TYPO3CMS with Fluid Components, AlpineJS (or petite-vue) and TailwindCSS.
+
+- Open with Gitpod https://gitpod.io#snapshot/d3249d54-1f0f-4211-8f98-b19b372d26ea
 
 ## Prerequisites
 
-* PHP 7.4
-* [Composer](https://getcomposer.org/download/)
+- Docker Desktop
+- DDEV
 
-## Quickstart
 
-* `composer create-project typo3/cms-base-distribution project-name ^11`
-* `cd project-name`
+## Local installation guide
 
-### Setup
+	git clone https://github.com/fgeierst/typo3-11-tailwind-demo.git
+	cd typo3-11-tailwind-demo
+	ddev start
+	ddev composer install
+	ddev snapshot restore
+    ddev npm install
+	
+Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.site/typo3) using these credentials:
 
-To start an interactive installation, you can do so by executing the following
-command and then follow the wizard:
+- Username: `admin`
+- Password: `password`
 
-```bash
-composer exec typo3cms install:setup
-```
 
-### Setup unattended (optional)
+## Start TailwindCSS and Rollup watchers in development
 
-If you're a more advanced user, you might want to leverage the unattended installation.
-To do this, you need to execute the following command and substitute the arguments
-with your own environment configuration.
+	ddev npm run css:dev 
+    ddev npm run js:dev 
 
-```bash
-composer exec typo3cms install:setup \
-    --no-interaction \
-    --database-user-name=typo3 \
-    --database-user-password=typo3 \
-    --database-host-name=127.0.0.1 \
-    --database-port=3306 \
-    --database-name=typo3 \
-    --use-existing-database \
-    --admin-user-name=admin \
-    --admin-password=password \
-    --site-setup-type=site
-```
+## Build JS and CSS for production
 
-### Development server
-
-While it's advised to use a more sophisticated web server such as
-Apache 2 or Nginx, you can instantly run the project by using PHPs` built-in
-[web server](https://secure.php.net/manual/en/features.commandline.webserver.php).
-
-* `TYPO3_CONTEXT=Development php -S localhost:8000 -t public`
-* open your browser at "http://localhost:8000"
-
-Please be aware that the built-in web server is single threaded and only meant
-to be used for development.
-
-## License
-
-GPL-2.0 or later
+	ddev npm run css:build
+    ddev npm run js:build
