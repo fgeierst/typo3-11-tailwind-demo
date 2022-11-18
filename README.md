@@ -2,7 +2,7 @@
 
 A quick demo for TYPO3CMS with Fluid Components, AlpineJS (or petite-vue) and TailwindCSS.
 
-- Open with Gitpod https://gitpod.io#snapshot/d3249d54-1f0f-4211-8f98-b19b372d26ea
+- Open with Gitpod https://gitpod.io#snapshot/754dd2d5-0dce-4ff4-bab6-d532413d79fb
 
 ## Prerequisites
 
