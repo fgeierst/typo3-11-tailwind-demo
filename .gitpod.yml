@@ -4,6 +4,7 @@ tasks:
   - init: |
       ddev start -y
       ddev composer install
+      ddev snapshot restore --latest
       ddev npm install
     command: |
       ddev start -y
