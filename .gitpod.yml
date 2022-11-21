@@ -1,16 +1,24 @@
 image: drupalpod/drupalpod-gitpod-base:20221021
 
 tasks:
-  - init: |
+  - name: typo3
+    init: |
       ddev start -y
       ddev composer install
       ddev snapshot restore --latest
       ddev npm install
+      gp sync-done install
     command: |
       ddev start -y
-      ddev npm run css:dev
-      ddev npm run js:dev 
       gp ports await 8080 && gp preview $(gp url 8080)
+
+  - name: tailwind
+    init: gp sync-await install
+    command: ddev npm run css:dev
+
+  - name: rollup
+    init: gp sync-await install
+    command: ddev npm run js:dev 
 
 ports:
   # Used by ddev - local db clients
