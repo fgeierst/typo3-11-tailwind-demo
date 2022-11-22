@@ -7,6 +7,8 @@ tasks:
       ddev composer install
       ddev snapshot restore --latest
       ddev npm install
+      ddev npm run css:build
+      ddev npm run js:build
     command: |
       ddev start -y
       gp sync-done prepare
