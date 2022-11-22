@@ -4,7 +4,8 @@ A quick demo for TYPO3CMS with Fluid Components, AlpineJS (or petite-vue) and Ta
 
 <img src='./typo3-cat-stack.png' width='400' alt="Annotated screenshot">
 
-- Open with Gitpod https://gitpod.io#snapshot/754dd2d5-0dce-4ff4-bab6-d532413d79fb
+[Open with Gitpod](https://gitpod.io/#https://github.com/fgeierst/typo3-11-tailwind-demo/)
+
 
 ## Prerequisites
 
