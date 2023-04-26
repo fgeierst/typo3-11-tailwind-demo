@@ -10,10 +10,10 @@
     "js:build": "rollup --config"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "rollup": "^2.79.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "tailwindcss": "^3.2.3"
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.21.0",
+    "@rollup/plugin-terser": "^0.4.1",
+    "tailwindcss": "^3.3.2"
   },
   "keywords": [],
   "author": "Florian Geierstanger",
