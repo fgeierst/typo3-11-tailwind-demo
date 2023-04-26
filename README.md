@@ -33,6 +33,8 @@ Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.s
 	ddev npm run css:dev 
 	ddev npm run js:dev 
 
+*Note*: If using DDEV make sure to have [Mutagen](https://ddev.readthedocs.io/en/latest/users/install/performance/#mutagen) enabled for the file watcher to work properly. If not, you can also run the above script outside of the docker container (`npm run css:dev`).
+
 ## Build JS and CSS for production
 
 	ddev npm run css:build &&
