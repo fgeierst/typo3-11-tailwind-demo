@@ -2,13 +2,9 @@
 
 <f:layout name="Default" />
 <f:section name="Main">
-    <main id="main" class="grid gap-4 p-4">
+    <main id="main" class="grid gap-4 p-4 container mx-auto">
 
         <h1 class="text-6xl font-bold mb-8">{data.title}</h1>
-
-        <!-- <td:Card title="TYPO3" link="https://typo3.org" icon="typo3">
-            The professional, flexible Content Management System
-        </td:Card> -->
 
         <article class="text-lg">
             <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />

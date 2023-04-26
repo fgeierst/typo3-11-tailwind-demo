@@ -6,18 +6,24 @@
     <fc:param name="theme" type="string" optional="1" default="light" />
 
     <fc:renderer>
-        <a href="{link}" class="{component.class} {component.class}-{theme} border border-black p-1 rounded block ">
-            <h3 class="{component.prefix}title">{title}</h3>
-            <f:if condition="{content}">
-                <p class="{component.prefix}description">{content}</p>
-            </f:if>
-        </a>
-        <div v-scope="{ count: 0 }" data-reactive>
-            <p>{{ count }}</p>
+        <div v-scope="{ count: 0 }" data-reactive class="border border-black p-2 rounded flex flex-col justify-between">
+            <a href="{link}" class="{component.class} {component.class}-{theme} ">
+                <h3 class="{component.prefix}title">{title}</h3>
+                <f:if condition="{content}">
+                    <p class="{component.prefix}description">{content}</p>
+                </f:if>
+            </a>
+    
+            <div class="grid grid-cols-2 gap-2">
+                <span class="font-bold text-4xl col-span-2">{{ count }}</span>
+                <td:Button action="count++">
+                    Add
+                </td:Button>
+                <td:Button action="count--">
+                    Remove
+                </td:Button>
+            </div>
 
-            <td:Button action="count++">
-                Increment
-            </td:Button>
         </div>
     </fc:renderer>
 </fc:component>
