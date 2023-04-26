@@ -1,6 +1,9 @@
 {
   "name": "typo3-11-tailwind-demo",
   "description": "Get going quickly with TYPO3 CMS.",
+  "keywords": [],
+  "author": "Florian Geierstanger",
+  "license": "ISC",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,16 +12,13 @@
     "js:dev": "rollup --config --watch",
     "js:build": "rollup --config"
   },
+  "dependencies": {
+    "petite-vue": "^0.4.1"
+  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.2",
     "rollup": "^3.21.0",
     "@rollup/plugin-terser": "^0.4.1",
     "tailwindcss": "^3.3.2"
-  },
-  "keywords": [],
-  "author": "Florian Geierstanger",
-  "license": "ISC",
-  "dependencies": {
-    "petite-vue": "^0.4.1"
   }
 }

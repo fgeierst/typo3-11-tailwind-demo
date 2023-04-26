@@ -19,7 +19,7 @@ A quick demo for TYPO3CMS with Fluid Components, AlpineJS (or petite-vue) and Ta
 	cd typo3-11-tailwind-demo
 	ddev start
 	ddev composer install
-	ddev snapshot restore
+	ddev snapshot restore --latest
 	ddev npm install
 	
 Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.site/typo3) using these credentials:
