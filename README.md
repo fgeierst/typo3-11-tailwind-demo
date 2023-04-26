@@ -20,7 +20,7 @@ A quick demo for TYPO3CMS with Fluid Components, AlpineJS (or petite-vue) and Ta
 	ddev start
 	ddev composer install
 	ddev snapshot restore
-    ddev npm install
+	ddev npm install
 	
 Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.site/typo3) using these credentials:
 
@@ -31,9 +31,9 @@ Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.s
 ## Start TailwindCSS and Rollup watchers in development
 
 	ddev npm run css:dev 
-    ddev npm run js:dev 
+	ddev npm run js:dev 
 
 ## Build JS and CSS for production
 
-	ddev npm run css:build
-    ddev npm run js:build
+	ddev npm run css:build &&
+	ddev npm run js:build

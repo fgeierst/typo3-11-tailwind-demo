@@ -10,6 +10,8 @@ nbproject
 /public/typo3conf/*
 !/public/typo3conf/LocalConfiguration.php
 !/public/typo3conf/AdditionalConfiguration.php
+node_modules
 
 packages/tailwind_demo_base/Resources/Public/Css
 packages/tailwind_demo_base/Resources/Public/JavaScript
+
