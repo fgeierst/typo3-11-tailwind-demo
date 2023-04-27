@@ -44,3 +44,6 @@ Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.s
 
 The UI components are encapsulated as [Fluid Components](https://github.com/sitegeist/fluid-components), located in the *Private/Components/* folder. Using fixture JSON files, you can work on individual components in isolation (similar to Storybook). The component explorer is at https://typo3-11-tailwind-demo.ddev.site/styleguide/
 
+## Reactivity
+
+One every element that has the attribute `data-reactive` petite-vue is mounted. See the [petite-vue Documentation](https://github.com/vuejs/petite-vue) for more details.
