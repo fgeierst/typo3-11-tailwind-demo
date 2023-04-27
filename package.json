@@ -6,6 +6,7 @@
   "license": "ISC",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "css:dev": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --watch",
     "css:build": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --minify",
