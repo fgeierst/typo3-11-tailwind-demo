@@ -46,4 +46,4 @@ The UI components are encapsulated as [Fluid Components](https://github.com/site
 
 ## Reactivity
 
-One every element that has the attribute `data-reactive` petite-vue is mounted. See the [petite-vue Documentation](https://github.com/vuejs/petite-vue) for more details.
+On every element that has the attribute `data-reactive`, petite-vue is mounted. See the [petite-vue Documentation](https://github.com/vuejs/petite-vue) for how to use it.
