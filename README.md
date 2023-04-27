@@ -39,3 +39,8 @@ Login via [typo3-11-tailwind-demo.ddev.site/typo3](typo3-11-tailwind-demo.ddev.s
 
 	ddev npm run css:build &&
 	ddev npm run js:build
+
+## Fluid Components
+
+The UI components are encapsulated as [Fluid Components](https://github.com/sitegeist/fluid-components), located in the *Private/Components/* folder. Using fixture JSON files, you can work on individual components in isolation (similar to Storybook). The component explorer is at https://typo3-11-tailwind-demo.ddev.site/styleguide/
+
