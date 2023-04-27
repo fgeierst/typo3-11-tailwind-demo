@@ -1,0 +1,8 @@
+FluidStyleguide:
+    ComponentAssets:
+        Packages:
+            'Floriangeierstanger\TailwindDemoBase\Components':
+                Css:
+                    - 'EXT:tailwind_demo_base/Resources/Public/Css/main.css'
+                Javascript:
+                    - 'EXT:tailwind_demo_base/Resources/Public/JavaScript/Main.js'
