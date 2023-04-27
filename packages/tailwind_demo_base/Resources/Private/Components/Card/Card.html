@@ -8,9 +8,9 @@
     <fc:renderer>
         <div v-scope="{ count: 0 }" data-reactive class="border border-black p-2 rounded flex flex-col justify-between">
             <a href="{link}" class="{component.class} {component.class}-{theme} ">
-                <h3 class="{component.prefix}title">{title}</h3>
+                <h3 class="{component.prefix}title font-bold mb-2">{title}</h3>
                 <f:if condition="{content}">
-                    <p class="{component.prefix}description">{content}</p>
+                    <p class="{component.prefix}description mb-2">{content}</p>
                 </f:if>
             </a>
     

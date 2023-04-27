@@ -2,5 +2,9 @@
 	"default": {
 			"action": "alert()",
 			"content": "increment"
+	},
+	"longlabel": {
+			"action": "alert()",
+			"content": "This is a very long label for this button."
 	}
 }
