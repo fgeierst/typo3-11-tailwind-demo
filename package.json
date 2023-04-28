@@ -11,7 +11,8 @@
     "css:dev": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --watch",
     "css:build": "npx tailwindcss -i ./packages/tailwind_demo_base/Resources/Private/Scss/main.scss -o ./packages/tailwind_demo_base/Resources/Public/Css/main.css --minify",
     "js:dev": "rollup --config --watch",
-    "js:build": "rollup --config"
+    "js:build": "rollup --config",
+    "build": "npm run css:build && npm run js:build"
   },
   "dependencies": {
     "petite-vue": "^0.4.1"

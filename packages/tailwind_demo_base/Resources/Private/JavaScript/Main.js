@@ -6,7 +6,9 @@ import { createApp } from 'petite-vue'
 
 const reactiveElements = document.querySelectorAll('[data-reactive]');
 reactiveElements.forEach(element => {
-	createApp().mount(element)
+	createApp({
+		$delimiters: ['[', ']'] 
+	}).mount(element)
 })
 
 
