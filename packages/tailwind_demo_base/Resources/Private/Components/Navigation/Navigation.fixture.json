@@ -1,0 +1,26 @@
+{
+	"default": {
+			"menu": [
+					{
+							"title": "Homepage",
+							"href": "/",
+							"id": 0
+					},
+					{
+							"title": "About",
+							"href": "/about",
+							"id": 1
+					},
+					{
+							"title": "Contact",
+							"href": "/contact",
+							"id": 2
+					},
+					{
+							"title": "Login",
+							"href": "/login",
+							"id": 3
+					}
+			]
+	}
+}

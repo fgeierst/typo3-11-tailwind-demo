@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:td="http://typo3.org/ns/Floriangeierstanger/TailwindDemoBase/Components" data-namespace-typo3-fluid="true" > </html>
+<fc:component>
+    <fc:param name="menu" type="array" />
+    
+    <fc:renderer>
+        <f:comment><!-- 
+            Question: How can I render the menu array with Fluid?
+            The following snippet does not work:
+            const jsonString = {menu -> f:format.json() -> f:format.raw()};
+            const obj = JSON.parse(jsonString); 
+        --></f:comment>
+        <div id="menu" 
+            data-reactive    
+            v-scope='{ 
+                menu: [
+                    {
+                            "title": "Homepage",
+                            "href": "/",
+                            "id": 0
+                    },
+                    {
+                            "title": "About",
+                            "href": "/about",
+                            "id": 1
+                    },
+                    {
+                            "title": "Contact",
+                            "href": "/contact",
+                            "id": 2
+                    },
+                    {
+                            "title": "Login",
+                            "href": "/login",
+                            "id": 3
+                    }
+                ], 
+            }'
+            class=""
+        >
+            <ul class="flex gap-2">
+                <li v-for="item in menu" :id=`menu-item-${item.id}`>
+                    <a :href="item.href"
+                        class="border border-black p-2 rounded"
+                    >
+                        [ item.title ]
+                    </a>
+                </li>
+            </ul>
+            </script>
+        </div>
+    </fc:renderer>
+</fc:component>
