@@ -7,19 +7,16 @@
 
 		<a href="/" class="hover:underline underline-offset-4">Home</a>
 
-		<td:Menu 
-			navigation="{mainnavigation}" 
-			class="hidden sm:flex"
-		/>
+		<td:Navigation menu="{mainnavigation}" class="hidden gap-2 sm:flex" />
+
 		<div 
 			class="fixed top-16 bottom-0 left-0 right-0 
 				bg-blue-100 text-4xl font-medium" 
 			v-show="open"
 		>
-			<td:Menu 
-				navigation="{mainnavigation}" 
-				class="flex-col items-center gap-10 p-4 pt-10"
-			/>
+
+			<td:Navigation menu="{mainnavigation}" class="flex-col items-center gap-10 p-4 pt-10" />
+			
 		</div>
 
 		<button 

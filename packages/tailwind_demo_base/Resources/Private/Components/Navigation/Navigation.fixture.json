@@ -3,22 +3,22 @@
 			"menu": [
 					{
 							"title": "Homepage",
-							"href": "/",
+							"link": "/",
 							"id": 0
 					},
 					{
 							"title": "About",
-							"href": "/about",
+							"link": "/about",
 							"id": 1
 					},
 					{
 							"title": "Contact",
-							"href": "/contact",
+							"link": "/contact",
 							"id": 2
 					},
 					{
 							"title": "Login",
-							"href": "/login",
+							"link": "/login",
 							"id": 3
 					}
 			]

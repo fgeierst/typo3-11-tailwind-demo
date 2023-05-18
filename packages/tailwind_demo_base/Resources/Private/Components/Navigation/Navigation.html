@@ -4,49 +4,20 @@
     
     <fc:renderer>
         <f:comment><!-- 
-            Question: How can I render the menu array with Fluid?
-            The following snippet does not work:
-            const jsonString = {menu -> f:format.json() -> f:format.raw()};
-            const obj = JSON.parse(jsonString); 
+            Client side rendering of the menu (with petite-vue)
+            The data is coming from fluid components {menu} param.
         --></f:comment>
-        <div id="menu" 
-            data-reactive    
-            v-scope='{ 
-                menu: [
-                    {
-                            "title": "Homepage",
-                            "href": "/",
-                            "id": 0
-                    },
-                    {
-                            "title": "About",
-                            "href": "/about",
-                            "id": 1
-                    },
-                    {
-                            "title": "Contact",
-                            "href": "/contact",
-                            "id": 2
-                    },
-                    {
-                            "title": "Login",
-                            "href": "/login",
-                            "id": 3
-                    }
-                ], 
-            }'
-            class=""
+        <ul data-reactive
+            v-scope='{f:format.json(value: {menu: menu}) -> f:format.raw()}'
+            class="flex {class}"
         >
-            <ul class="flex gap-2">
-                <li v-for="item in menu" :id=`menu-item-${item.id}`>
-                    <a :href="item.href"
-                        class="border border-black p-2 rounded"
-                    >
-                        [ item.title ]
-                    </a>
-                </li>
-            </ul>
-            </script>
-        </div>
+            <li v-for="item in menu" :id=`menu-item-${item.data.uid}`>
+                <a :href="item.link"
+                    class="border border-black p-2 rounded hover:bg-black hover:text-white"
+                >
+                    [ item.title ]
+                </a>
+            </li>
+        </ul>
     </fc:renderer>
 </fc:component>

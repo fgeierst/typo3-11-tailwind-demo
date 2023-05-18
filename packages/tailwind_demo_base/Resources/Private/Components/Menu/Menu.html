@@ -2,6 +2,9 @@
     <fc:param name="navigation" type="array" />
 
     <fc:renderer>
+			<f:comment><!-- 
+				Server side rendering of the menu.
+		--></f:comment>
 			<ul class="flex gap-6 {class}">
 				<f:for each="{navigation}" as="mainnavigationItem">
 					<li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
