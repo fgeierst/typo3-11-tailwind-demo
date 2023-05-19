@@ -51,11 +51,11 @@ Petite-vue is mounted on elements with the attribute `data-reactive`. See the [p
 You can pass data from TYPO3 Fluid (server side rendering) to petite-vue (client side rendering). In this [example](packages/tailwind_demo_base/Resources/Private/Components/Navigation/Navigation.html) the TYPO3 Fluid variable `{menu}` contains an array of menu items from the TYPO3 MenuProcessor. On the server, it's rendered as a JavaScript object into the `v-scope` attribute. In the browser this value is picked up by petite-vue and used to render list items and links. We use square brackets as delimiters for petite-vue `[ item.title ]` to not get confused with Fluid's angle bracket syntax `{f:format.json()}`.
 
 ```html
-<ul data-reactive v-scope='{f:format.json(value: {menu: menu}) -> f:format.raw()}'>
-    <li v-for="item in menu">
-	<a :href="item.link">
-	    [ item.title ]
-	</a>
-    </li>
-</ul>
+<ul data-reactive v-scope='{f:format.json(value: {menu: menu})}'>
+	<li v-for="item in menu">
+		<a :href="item.link">
+			[ item.title ]
+		</a>
+	</li>
+</ul>f
 ```

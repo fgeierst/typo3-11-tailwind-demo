@@ -8,12 +8,13 @@
             The data is coming from fluid components {menu} param.
         --></f:comment>
         <ul data-reactive
-            v-scope='{f:format.json(value: {menu: menu}) -> f:format.raw()}'
+            v-scope='{f:format.json(value: {menu: menu})}'
             class="flex {class}"
         >
-            <li v-for="item in menu" :id=`menu-item-${item.data.uid}`>
+            <li v-for="item in menu" :id="[ 'nav-item-'+item.data.uid ]">
                 <a :href="item.link"
-                    class="border border-black p-2 rounded hover:bg-black hover:text-white"
+                   :aria-current="[ item.active ? 'page' : false ]"
+                   class="border border-black p-2 rounded hover:bg-black hover:text-white aria-current:before:content-['•'] before:absolute relative before:-bottom-1 before:-translate-x-1/2 before:left-1/2"
                 >
                     [ item.title ]
                 </a>

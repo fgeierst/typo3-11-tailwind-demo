@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./packages/tailwind_demo_base/Resources/Private/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      aria: {
+        current: 'current="page"',
+      },
+    },
   },
   plugins: [],
 }
