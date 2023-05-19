@@ -57,5 +57,5 @@ You can pass data from TYPO3 Fluid (server side rendering) to petite-vue (client
 			[ item.title ]
 		</a>
 	</li>
-</ul>f
+</ul>
 ```
